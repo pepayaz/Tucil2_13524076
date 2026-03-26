@@ -14,7 +14,6 @@ Program ini merupakan aplikasi berbasis *Command Line Interface* (CLI) yang meng
 
 ## Struktur Repositori
 Repositori ini disusun berdasarkan spesifikasi tugas standar:
-* `bin/` : Menyimpan file *executable* program hasil kompilasi.
 * `doc/` : Menyimpan dokumen laporan Tugas Kecil dalam format PDF.
 * `src/` : Menyimpan seluruh *source code* bahasa Go (`.go`).
 * `test/` : Menyimpan kumpulan data uji berupa file `.obj` asli beserta file `.obj` hasil *voxelization*.
