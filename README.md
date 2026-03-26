@@ -18,6 +18,14 @@ Repositori ini disusun berdasarkan spesifikasi tugas standar:
 * `src/` : Menyimpan seluruh *source code* bahasa Go (`.go`).
 * `test/` : Menyimpan kumpulan data uji berupa file `.obj` asli beserta file `.obj` hasil *voxelization*.
 
+### Rincian File Source Code (`src/`)
+Program ini dirancang secara modular ke dalam 5 file utama:
+* `main.go` : Titik masuk utama program (*entry point*), menangani argumen CLI, integrasi modul, dan pencetakan statistik kalkulasi.
+* `geometri.go` : Mendefinisikan struktur data spasial 3D (`Vector3`, `Triangle`, `BoundingBox`) dan algoritma kalkulasi matematis (*Separating Axis Theorem*).
+* `parser.go` : Modul *file I/O* untuk membaca, memvalidasi, dan mengekstrak titik koordinat serta poligon dari file `.obj` asli.
+* `octree.go` : Jantung algoritma program; berisi struktur *node* pohon dan implementasi rekursif *Divide and Conquer* beserta logika *pruning*-nya.
+* `generator.go` : Modul *writer* untuk merakit kembali himpunan *voxel* dari *leaf node* menjadi format standar file `.obj` keluaran.
+
 ---
 
 ## Requirements & Instalasi
