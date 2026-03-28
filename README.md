@@ -16,6 +16,7 @@ Program ini merupakan aplikasi berbasis *Command Line Interface* (CLI) yang meng
 Repositori ini disusun berdasarkan spesifikasi tugas standar:
 * `doc/` : Menyimpan dokumen laporan Tugas Kecil dalam format PDF.
 * `src/` : Menyimpan seluruh *source code* bahasa Go (`.go`).
+* `bin/` : Berisi *executable file* hasil kompilasi program.
 * `test/` : Menyimpan kumpulan data uji berupa file `.obj` asli beserta file `.obj` hasil *voxelization*.
 
 ### Rincian File Source Code (`src/`)
